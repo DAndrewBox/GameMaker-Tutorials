@@ -49,7 +49,7 @@ function loadgame_ini() {
 		_balloon.y = ini_read_real("BALLOON_" + string(i), "Y", 0);
 		_balloon.depth = ini_read_real("BALLOON_" + string(i), "DEPTH", 0);
 		_balloon.image_index = ini_read_real("BALLOON_" + string(i), "INDEX", 0);
-		_balloon.text = ini_read_string("BALLOON_" + string(i), "TEXT", 0);
+		_balloon.text = ini_read_string("BALLOON_" + string(i), "TEXT", "");
 	}
 	
 	ini_close();
