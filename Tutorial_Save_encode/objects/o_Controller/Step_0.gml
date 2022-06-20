@@ -7,7 +7,8 @@ if (mouse_check_button_pressed(mb_left)) {
 
 // Savegame
 if (keyboard_check_pressed(ord("S"))) {
-	savegame_ini();
+	//savegame_ini();
+	savegame_json();
 	show_message("Game saved!");
 }
 
@@ -18,5 +19,6 @@ if (keyboard_check_pressed(ord("L"))) {
 		instance_destroy();	
 	}
 	
-	loadgame_ini();
+	//loadgame_ini();
+	loadgame_json();
 }
